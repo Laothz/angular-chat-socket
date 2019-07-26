@@ -1,0 +1,67 @@
+@import "../../../styles.scss";
+
+.background-login{
+    background-color: $primary-color;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .card-login{
+
+        .div-input-login{
+            display: block;
+            background-color: #082336;
+            border: 2px solid $secondary-color;
+            height: 46px;
+            width: 300px;
+            border-radius: 6px;
+            color: $secondary-color;
+            display: flex;
+            margin-bottom: 15px;
+
+            i{
+                padding: 15px;
+            }
+
+            .input-login{
+                height: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: $secondary-color;
+                width: 100%;
+                
+                &::-webkit-input-placeholder{
+                    color: $secondary-color;
+                }
+                &:-moz-placeholder { /* Firefox 18- */
+                    color: $secondary-color;  
+                }
+                &::-moz-placeholder {  /* Firefox 19+ */
+                    color: $secondary-color;  
+                }
+                &:-ms-input-placeholder {
+                    color: $secondary-color;  
+                }
+            }
+        }
+
+        .button-login{
+            background-color: $ternary-color;
+            border: none;
+            height: 35px;
+            float: right;
+            outline: none;
+            width: 140px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 900;
+
+            &:hover{
+                box-shadow: 0px 0px 10px $ternary-color;
+            }
+        }
+    }
+}

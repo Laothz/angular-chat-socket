@@ -4,6 +4,6 @@
       <i class="fa fa-user" aria-hidden="true"></i>
       <input class="input-login" type="text" placeholder="Usuário" [formControl]="usuario" required>
     </div>
-    <button class="button-login" (click)="submit()">ENTRAR</button>
+    <button class="button-login" (click)="submit()" [disabled]="!usuario.valid">ENTRAR</button>
   </div>
 </div>

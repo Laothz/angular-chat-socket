@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
  
-const config: SocketIoConfig = { url: 'http://localhost:3000', options: {} };
+const config: SocketIoConfig = { url: 'https://morning-shore-56426.herokuapp.com/', options: {} };
 
 @NgModule({
   declarations: [

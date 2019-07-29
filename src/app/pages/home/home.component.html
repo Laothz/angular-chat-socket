@@ -1,3 +1,28 @@
-<p>
-  home works!
-</p>
+<div class="content">
+  <div class="sidebar">
+    <div class="div-user">
+      <i class="fa fa-user-circle" aria-hidden="true"></i>
+      <p>{{user}}</p>
+      <!-- <div class="users-list">
+        <p> {{usersList}} </p>
+      </div> -->
+    </div>
+  </div>
+  <div class="center">
+    <div class="topbar">
+
+    </div>
+    <div class="chat" id="divChat">
+      <div *ngFor="let message of messagesList">
+        <div class="message">
+          <h4>{{message.user}}</h4>
+          <p>{{message.message}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="input-chat">
+      <input type="text" placeholder="Mensagem" (keydown.enter)="submit()" [formControl]="message">
+      <i class="fa fa-arrow-right" aria-hidden="true"  (click)="submit()"></i>
+    </div>
+  </div>
+</div>
